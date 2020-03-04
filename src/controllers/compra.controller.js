@@ -36,7 +36,7 @@ exports.findAll = (req, res) => {
             res.send({
                 name: "Success",
                 message: ['Busca realizada com sucesso!'],
-                data: [data]
+                data: data
             });
         })
         .catch(err => {
