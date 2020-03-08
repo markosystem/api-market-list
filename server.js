@@ -6,11 +6,7 @@ require('dotenv').config();
 
 const app = express();
 
-var corsOptions = {
-    origin: `${process.env.CORS_REQ}`
-};
-
-app.use(cors(corsOptions));
+app.use(cors({ origin: `${process.env.CORS_REQ}` }));
 
 // requests of content-type - application/json
 app.use(bodyParser.json());

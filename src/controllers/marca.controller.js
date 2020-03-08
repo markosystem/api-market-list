@@ -14,7 +14,7 @@ exports.findOne = (req, res) => {
             return res.send({
                 name: "Success",
                 message: ['O Registro foi encontrado com sucesso!'],
-                data: [data]
+                data: data
             });
         })
         .catch(err => {
@@ -69,7 +69,7 @@ exports.create = (req, res) => {
             res.send({
                 name: "Success",
                 message: ["O Registro foi cadastrado com sucesso!"],
-                data: [data]
+                data: data
             });
         })
         .catch(err => {
@@ -109,7 +109,7 @@ exports.update = (req, res) => {
             return res.send({
                 name: "Success",
                 message: ["O Registro foi atualizado com sucesso!"],
-                data: [data]
+                data: data
             });
         })
         .catch(err => {
@@ -117,7 +117,7 @@ exports.update = (req, res) => {
             res.status(500).send({
                 name: "Error",
                 message: ['Ocorreu um erro ao atualizar o Registro!'],
-                data: [data]
+                data: data
             });
         });
 };
